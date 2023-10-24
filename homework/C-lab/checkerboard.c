@@ -1,11 +1,9 @@
-/*  CS 360 Homework 1 -- Imperative paradigm, C language */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <png.h>
 
 // Function prototype
-void set_image_data(png_bytep **data, int w, int h);
+void set_image_data(png_bytep * data, int w, int h);
 
 int main(int argc, char ** argv)
 {
@@ -93,7 +91,6 @@ int main(int argc, char ** argv)
     }
 
     //   then have each of those point to an array for each row
-    png_bytep **row_ptrs = (png_bytep **)malloc(sizeof(png_bytep *) * height);
     for(int j = 0; j < height; j++)
     {
         row_ptrs[j] = (png_bytep)malloc(sizeof(png_byte) * 3 * width);
@@ -132,15 +129,28 @@ int main(int argc, char ** argv)
 }
 
 //Function Definition
-void set_image_data(png_bytep **data, int w, int h)
+void set_image_data(png_bytep * data, int w, int h)
 {
     for (int y = 0; y < h; y++)
     {
         for (int x = 0; x < w; x++)
         {
-         data[y][3 * x] = (int)(0xFF * 0xFF / 255); //Red
-         data[y][3 * x + 1] = (int)(0xAA * 0xFF / 255); //Green
-         data[y][3 * x + 2] = (int)(0xBB * 0xFF / 255); //Blue
+            //Calculate index for the current pixel
+            int index = (y * w + x) * 3;
+            printf("x: %d, y: %d, w: %d, h: %d, index: %d\n", x, y, w, h, index);
+            //Make sure the indices are within bounds
+            if (y < h && x < w && index < 3 * w * h)
+            {
+                //Now set RGB values for pixel in hexadecimal color (#FFAABB)
+                data[y][index] = (int)(0xFF * 0xFF / 255); //Red
+                data[y][index + 1] = (int)(0xAA * 0xFF / 255); //Green
+                data[y][index + 2] = (int)(0xBB * 0xFF / 255); //Blue
+            }
+            else
+            {
+                fprintf(stderr, "Attempted to access out-of-bounds memory\n");
+                exit(EXIT_FAILURE);
+            }
         }
     }
 }
