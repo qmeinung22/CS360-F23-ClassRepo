@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "oop", "oop", "{8A580735-222E-4B2C-A451-4A8D9C545D54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld2", "oop\HelloWorld2\HelloWorld2.csproj", "{33324101-C460-4362-BB0A-84B2D53F18CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "oop\HelloWorld\HelloWorld.csproj", "{0C3F7C2C-0D26-4B11-AB0D-8A3A8721EC4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "homework", "homework", "{6D2C198C-E7E3-4008-8887-CD1167971589}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ObjectOriented", "ObjectOriented", "{377132FF-15A4-497C-9CD5-DDCC5A06FF30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{95E9CCF0-B113-44D4-A198-F5CFB7FEFE41}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gps2SVG", "homework\ObjectOriented\Project\Gps2SVG\Gps2SVG.csproj", "{6FBEC954-91A6-440A-91F3-2EB4E1BB21DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33324101-C460-4362-BB0A-84B2D53F18CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33324101-C460-4362-BB0A-84B2D53F18CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33324101-C460-4362-BB0A-84B2D53F18CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33324101-C460-4362-BB0A-84B2D53F18CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C3F7C2C-0D26-4B11-AB0D-8A3A8721EC4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3F7C2C-0D26-4B11-AB0D-8A3A8721EC4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3F7C2C-0D26-4B11-AB0D-8A3A8721EC4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C3F7C2C-0D26-4B11-AB0D-8A3A8721EC4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FBEC954-91A6-440A-91F3-2EB4E1BB21DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FBEC954-91A6-440A-91F3-2EB4E1BB21DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FBEC954-91A6-440A-91F3-2EB4E1BB21DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FBEC954-91A6-440A-91F3-2EB4E1BB21DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33324101-C460-4362-BB0A-84B2D53F18CB} = {8A580735-222E-4B2C-A451-4A8D9C545D54}
+		{0C3F7C2C-0D26-4B11-AB0D-8A3A8721EC4C} = {8A580735-222E-4B2C-A451-4A8D9C545D54}
+		{377132FF-15A4-497C-9CD5-DDCC5A06FF30} = {6D2C198C-E7E3-4008-8887-CD1167971589}
+		{95E9CCF0-B113-44D4-A198-F5CFB7FEFE41} = {377132FF-15A4-497C-9CD5-DDCC5A06FF30}
+		{6FBEC954-91A6-440A-91F3-2EB4E1BB21DC} = {95E9CCF0-B113-44D4-A198-F5CFB7FEFE41}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E3E9713-825B-43B4-92E7-5FF411DA2BF6}
+	EndGlobalSection
+EndGlobal
