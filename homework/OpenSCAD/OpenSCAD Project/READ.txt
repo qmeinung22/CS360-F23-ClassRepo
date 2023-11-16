@@ -1,0 +1,1 @@
+For this project I used chatGPT 4.0 and the OpenSCAD User Manual for shapes, functions, and inspiration. 
